@@ -1,11 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const [videoReady, setVideoReady] = useState(false);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (video) {
+      video.muted = true;
+      video.play().catch(() => {
+        setVideoReady(false);
+      });
+    }
+  }, []);
 
   function validateEmail(email: string) {
     return /\S+@\S+\.\S+/.test(email);
@@ -15,7 +29,6 @@ export default function Home() {
     e.preventDefault();
 
     const formElement = e.currentTarget;
-
     setError("");
     setSuccess(false);
 
@@ -44,12 +57,7 @@ export default function Home() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          nom,
-          email,
-          telephone,
-          message,
-        }),
+        body: JSON.stringify({ nom, email, telephone, message }),
       });
 
       if (res.ok) {
@@ -68,16 +76,21 @@ export default function Home() {
 
   return (
     <main className="bg-[#F6F1E8] text-[#1B1B1B]">
+      
+      
+      
+      
+      
+      
+      
       {/* MENU */}
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-10 py-6 text-white backdrop-blur-md bg-black/20 uppercase tracking-[0.2em] text-sm">
+      <nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-4 md:gap-10 py-5 md:py-6 text-white backdrop-blur-md bg-black/30 uppercase tracking-[0.12em] md:tracking-[0.2em] text-xs md:text-sm">
         <a href="/" className="hover:text-yellow-300 transition">
           Accueil
         </a>
-
         <a href="/prestations" className="hover:text-yellow-300 transition">
           Prestations
         </a>
-
         <a href="/contact" className="hover:text-yellow-300 transition">
           Contact
         </a>
@@ -89,21 +102,42 @@ export default function Home() {
 
       {/* HERO */}
       <section className="h-screen relative flex items-center justify-center text-center text-white overflow-hidden">
-        <video
-  autoPlay
-  muted
-  loop
-  playsInline
-  preload="auto"
-  className="absolute inset-0 w-full h-full object-cover"
->
-  <source src="/video.mp4" type="video/mp4" />
-</video>
+       
+       
+       
+        {/* IMAGE DE SECOURS */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+         style={{ backgroundImage: "url('/paire-chevaux.png')" }}
+        />
 
+
+
+
+
+
+        {/* VIDÉO */}
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          onCanPlay={() => setVideoReady(true)}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+            videoReady ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <source src="/video.mp4" type="video/mp4" />
+        </video>
+
+        {/* OVERLAY */}
         <div className="absolute inset-0 bg-black/60" />
 
+        {/* TEXTE */}
         <div className="relative z-10 max-w-3xl px-6">
-          <p className="uppercase tracking-[0.4em] text-sm text-yellow-300 mb-4">
+          <p className="uppercase tracking-[0.3em] md:tracking-[0.4em] text-xs md:text-sm text-yellow-300 mb-4">
             Mariage • Cinéma • Événementiel
           </p>
 
@@ -111,7 +145,7 @@ export default function Home() {
             Les Attelages du Temps
           </h1>
 
-          <p className="text-xl italic text-gray-200 mb-10">
+          <p className="text-lg md:text-xl italic text-gray-200 mb-10">
             Tradition, élégance et émotion
           </p>
 
@@ -124,11 +158,14 @@ export default function Home() {
         </div>
       </section>
 
+
+
+
+
+
       {/* PRESTATIONS */}
       <section className="py-24 px-6 max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12">
-          Nos Prestations
-        </h2>
+        <h2 className="text-4xl font-bold mb-12">Nos Prestations</h2>
 
         <div className="grid md:grid-cols-3 gap-10">
           <a
@@ -178,7 +215,7 @@ export default function Home() {
             className="block bg-white rounded-3xl overflow-hidden shadow-xl hover:scale-[1.02] transition duration-500"
           >
             <img
-              src="/galerie-evenement/caleche-noel.png"
+              src="/caleche-evenement.png"
               alt="Calèche événement"
               className="w-full h-72 object-cover"
             />
@@ -189,7 +226,7 @@ export default function Home() {
               </h3>
 
               <p className="text-gray-600">
-                Une touche magique pour vos événements et marchés de Noël.
+                Une touche magique pour vos événements et marchés.
               </p>
             </div>
           </a>
@@ -206,39 +243,32 @@ export default function Home() {
           />
 
           <div>
-            <h2 className="text-4xl font-bold mb-6">
-              À propos
-            </h2>
+            <h2 className="text-4xl font-bold mb-6">À propos</h2>
 
             <p className="text-gray-300 leading-relaxed">
-  Professionnels du milieu équestre depuis plus de vingt ans, nous mettons
-  notre expérience et notre passion au service de prestations authentiques
-  et raffinées.
-
-  <br />
-  <br />
-
-  Le bien-être animal est au cœur de chacune de nos attentions. Nos chevaux
-  et poneys évoluent dans un environnement respectueux, pensé pour leur
-  équilibre et leur sérénité, afin de garantir des prestations réalisées
-  dans les meilleures conditions.
-
-  <br />
-  <br />
-
-  Situés dans le Tarn, à proximité d’Albi et de Toulouse, Les Attelages du
-  Temps accompagnent mariages, événements et productions audiovisuelles avec
-  exigence, élégance et savoir-faire.
-</p>
+              Professionnels du milieu équestre depuis plus de vingt ans, nous
+              mettons notre expérience et notre passion au service de
+              prestations authentiques et raffinées.
+              <br />
+              <br />
+              Le bien-être animal est au cœur de chacune de nos attentions. Nos
+              chevaux et poneys évoluent dans un environnement respectueux,
+              pensé pour leur équilibre et leur sérénité, afin de garantir des
+              prestations réalisées dans les meilleures conditions.
+              <br />
+              <br />
+              Situés dans le Tarn, à proximité d’Albi et de Toulouse, Les
+              Attelages du Temps accompagnent mariages, événements et
+              productions audiovisuelles avec exigence, élégance et
+              savoir-faire.
+            </p>
           </div>
         </div>
       </section>
 
       {/* CONTACT */}
       <section id="contact" className="py-24 px-6 max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-10">
-          Contact
-        </h2>
+        <h2 className="text-4xl font-bold text-center mb-10">Contact</h2>
 
         {success ? (
           <div className="bg-white p-10 rounded-3xl shadow-xl text-center">
@@ -282,11 +312,7 @@ export default function Home() {
               className="w-full border p-4 rounded-xl"
             />
 
-            {error && (
-              <p className="text-red-500 text-center">
-                {error}
-              </p>
-            )}
+            {error && <p className="text-red-500 text-center">{error}</p>}
 
             <button
               type="submit"
