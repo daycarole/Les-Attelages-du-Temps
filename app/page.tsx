@@ -108,7 +108,7 @@ export default function Home() {
         {/* IMAGE DE SECOURS */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-         style={{ backgroundImage: "url('/paire-chevaux.png')" }}
+         style={{ backgroundImage: "url('/galerie-accueil/paire-chevaux.png')" }}
         />
 
 
@@ -129,7 +129,7 @@ export default function Home() {
             videoReady ? "opacity-100" : "opacity-0"
           }`}
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/galerie-accueil/video.mp4" type="video/mp4" />
         </video>
 
         {/* OVERLAY */}
@@ -167,21 +167,31 @@ export default function Home() {
       <section className="py-24 px-6 max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-12">Nos Prestations</h2>
 
+
+
+
         <div className="grid md:grid-cols-3 gap-10">
           <a
             href="/prestations#mariage"
             className="block bg-white rounded-3xl overflow-hidden shadow-xl hover:scale-[1.02] transition duration-500"
           >
             <img
-              src="/caleche-mariage.png"
-              alt="Calèche mariage"
+              src="/galerie-mariage/caleche-mariage.png"
+              alt="Calèche mariage tarn près d'albi et toulouse"
               className="w-full h-72 object-cover"
             />
 
             <div className="p-8">
               <h3 className="text-3xl font-bold mb-4 text-[#6E4B3A]">
+                                         
                 Mariage
               </h3>
+
+
+
+
+
+
 
               <p className="text-gray-600">
                 Une arrivée élégante et inoubliable pour votre cérémonie.
@@ -194,15 +204,20 @@ export default function Home() {
             className="block bg-white rounded-3xl overflow-hidden shadow-xl hover:scale-[1.02] transition duration-500"
           >
             <img
-              src="/caleche-cinema.png"
-              alt="Calèche cinéma"
+              src="/galerie-cinema/caleche-cinema.png"
+              alt="Calèche pour tournage cinéma historique"
               className="w-full h-72 object-cover"
             />
 
             <div className="p-8">
               <h3 className="text-3xl font-bold mb-4 text-[#6E4B3A]">
+                                        
                 Cinéma
               </h3>
+
+
+
+
 
               <p className="text-gray-600">
                 Authenticité et expérience pour vos productions historiques.
@@ -216,7 +231,7 @@ export default function Home() {
           >
             <img
               src="/galerie-evenement/caleche-noel.png"
-              alt="Calèche événement"
+              alt="Calèche événement pour marché de Noël"
               className="w-full h-72 object-cover"
             />
 
@@ -237,8 +252,8 @@ export default function Home() {
       <section className="bg-[#2B2622] text-white py-24 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <img
-            src="/chevaux-attelage.jpg"
-            alt="Chevaux attelage"
+            src="/galerie-accueil/chevaux-attelage.jpg"
+            alt="Chevaux attelage occitanie sud de france"
             className="rounded-3xl"
           />
 
@@ -258,7 +273,7 @@ export default function Home() {
               <br />
               <br />
               Situés dans le Tarn, à proximité d’Albi et de Toulouse, Les
-              Attelages du Temps accompagnent mariages, événements et
+              Calèches du Temps accompagnent mariages, événements et
               productions audiovisuelles avec exigence, élégance et
               savoir-faire.
             </p>
