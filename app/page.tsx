@@ -215,7 +215,7 @@ export default function Home() {
             className="block bg-white rounded-3xl overflow-hidden shadow-xl hover:scale-[1.02] transition duration-500"
           >
             <img
-              src="/caleche-evenement.png"
+              src="/galerie-evenement/caleche-noel.png"
               alt="Calèche événement"
               className="w-full h-72 object-cover"
             />
