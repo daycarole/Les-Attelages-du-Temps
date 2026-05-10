@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://lescalechesdutemps.com
+
+# Sitemaps
+Sitemap: https://lescalechesdutemps.com/sitemap.xml
