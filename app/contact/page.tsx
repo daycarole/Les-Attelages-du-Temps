@@ -164,7 +164,9 @@ export default function ContactPage() {
           <p className="mb-6 text-gray-600">
             Domaine Quitano
             <br />
-            Occitanie, France
+            81440 Saint julien du Puy
+            <br />
+            Tarn, France
           </p>
 
           <div className="h-[450px] rounded-2xl overflow-hidden">
