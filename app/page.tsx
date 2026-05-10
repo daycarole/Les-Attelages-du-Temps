@@ -142,7 +142,7 @@ export default function Home() {
           </p>
 
           <h1 className="text-4xl md:text-7xl font-bold mb-6">
-            Les Attelages du Temps
+            Les Calèches du Temps
           </h1>
 
           <p className="text-lg md:text-xl italic text-gray-200 mb-10">
