@@ -83,17 +83,22 @@ export default function Home() {
         </a>
       </nav>
 
+
+
+
+
       {/* HERO */}
       <section className="h-screen relative flex items-center justify-center text-center text-white overflow-hidden">
         <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute w-full h-full object-cover"
-        >
-          <source src="/video.mp4" type="video/mp4" />
-        </video>
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+  className="absolute inset-0 w-full h-full object-cover"
+>
+  <source src="/video.mp4" type="video/mp4" />
+</video>
 
         <div className="absolute inset-0 bg-black/60" />
 
