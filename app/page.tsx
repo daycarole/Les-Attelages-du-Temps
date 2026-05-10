@@ -141,7 +141,7 @@ export default function Home() {
             Mariage • Cinéma • Événementiel
           </p>
 
-          <h1 className="text-4xl md:text-7xl font-bold mb-6">
+          <h1 className="text-3xl md:text-7xl font-bold mb-6 whitespace-nowrap">
             Les Calèches du Temps
           </h1>
 
