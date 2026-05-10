@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
     verification: {
-  google: "lTIA4P60Z3gP9gq",
+  google: "lTIA4P60Z3gP9gqGsZoEOTmcNyVGfGj2FmXCivt5j6Y",
 },
   
   title:
