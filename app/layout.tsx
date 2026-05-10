@@ -13,6 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+    verification: {
+  google: "lTIA4P60Z3gP9gq",
+},
+  
   title:
     "Les Calèches du Temps | Calèches mariage et événementiel dans le Tarn",
 
