@@ -68,6 +68,8 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-[#F6F1E8] text-[#1B1B1B] pt-28 md:pt-32 px-4 md:px-6">
+     
+     
       {/* MENU */}
       <nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-4 md:gap-10 py-5 md:py-6 text-white backdrop-blur-md bg-black/30 uppercase tracking-[0.12em] md:tracking-[0.2em] text-xs md:text-sm">
         <a href="/" className="hover:text-yellow-300 transition">
@@ -89,9 +91,7 @@ export default function ContactPage() {
 
       {/* TITRE */}
       <section className="text-center mb-20">
-        <p className="uppercase tracking-[0.3em] text-yellow-700 text-sm mb-4">
-          Contact & renseignements
-        </p>
+       
 
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           Contact
