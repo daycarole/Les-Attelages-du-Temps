@@ -10,18 +10,26 @@ import "swiper/css/effect-fade";
 export default function Prestations() {
   return (
     <main className="min-h-screen bg-[#F6F1E8] pt-28 md:pt-32 px-5 md:px-6">
-      {/* MENU */}
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-4 md:gap-10 py-5 md:py-6 text-white backdrop-blur-md bg-black/30 uppercase tracking-[0.12em] md:tracking-[0.2em] text-xs md:text-sm">
-        <a href="/" className="hover:text-yellow-300 transition">
-          Accueil
-        </a>
-        <a href="/prestations" className="hover:text-yellow-300 transition">
-          Prestations
-        </a>
-        <a href="/contact" className="hover:text-yellow-300 transition">
-          Contact
-        </a>
-      </nav>
+ 
+ 
+  {/* MENU */}
+<nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-4 md:gap-10 py-5 md:py-6 text-white backdrop-blur-md bg-black/30 uppercase tracking-[0.12em] md:tracking-[0.2em] text-xs md:text-sm">
+  <a href="/" className="hover:text-yellow-300 transition">
+    Accueil
+  </a>
+
+  <a href="/prestations" className="hover:text-yellow-300 transition">
+    Nos Prestations
+  </a>
+
+  <a href="/chevaux" className="hover:text-yellow-300 transition">
+    Nos Chevaux
+  </a>
+
+  <a href="/contact" className="hover:text-yellow-300 transition">
+    Contact
+  </a>
+</nav>
 
       {/* TITRE */}
       <section className="text-center mb-14 md:mb-20">
@@ -169,6 +177,47 @@ export default function Prestations() {
                 className="h-[260px] md:h-[380px] w-full object-cover"
               />
             </SwiperSlide>
+
+            <SwiperSlide>
+              <img
+                src="/galerie-cinema/char-noirblanc.jpg"
+                alt="Attelage char romain"
+                className="h-[260px] md:h-[380px] w-full object-cover"
+              />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img
+                src="/galerie-cinema/char-profil.jpg"
+                alt="Course de char romain"
+                className="h-[260px] md:h-[380px] w-full object-cover"
+              />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img
+                src="/galerie-cinema/charette.jpg"
+                alt="Charette paysane pour bestiaux"
+                className="h-[260px] md:h-[380px] w-full object-cover"
+              />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img
+                src="/galerie-cinema/fayton.jpg"
+                alt="Caleche break fayton"
+                className="h-[260px] md:h-[380px] w-full object-cover"
+              />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img
+                src="/galerie-cinema/marathon.jpg"
+                alt="Attelage en tmarathon"
+                className="h-[260px] md:h-[380px] w-full object-cover"
+              />
+            </SwiperSlide>
+            
           </Swiper>
         </div>
       </section>

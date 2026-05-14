@@ -60,22 +60,26 @@ export default function ContactPage() {
       }
     } catch (error) {
       console.error(error);
-      setError("Impossible d’envoyer le message pour le moment.");
+      setError("Impossible d’envoyer le message.");
     } finally {
       setLoading(false);
     }
   }
 
   return (
-    <main className="min-h-screen bg-[#F6F1E8] text-[#1B1B1B] pt-32 px-6">
+    <main className="min-h-screen bg-[#F6F1E8] text-[#1B1B1B] pt-28 md:pt-32 px-4 md:px-6">
       {/* MENU */}
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-10 py-6 text-white backdrop-blur-md bg-black/20 uppercase tracking-[0.2em] text-sm">
+      <nav className="fixed top-0 left-0 w-full z-50 flex justify-center gap-4 md:gap-10 py-5 md:py-6 text-white backdrop-blur-md bg-black/30 uppercase tracking-[0.12em] md:tracking-[0.2em] text-xs md:text-sm">
         <a href="/" className="hover:text-yellow-300 transition">
           Accueil
         </a>
 
         <a href="/prestations" className="hover:text-yellow-300 transition">
-          Prestations
+          Nos Prestations
+        </a>
+
+        <a href="/chevaux" className="hover:text-yellow-300 transition">
+          Nos Chevaux
         </a>
 
         <a href="/contact" className="hover:text-yellow-300 transition">
@@ -84,21 +88,29 @@ export default function ContactPage() {
       </nav>
 
       {/* TITRE */}
-      <section className="text-center mb-16">
-        <h1 className="text-5xl font-bold mb-4">Contact</h1>
+      <section className="text-center mb-20">
+        <p className="uppercase tracking-[0.3em] text-yellow-700 text-sm mb-4">
+          Contact & renseignements
+        </p>
 
-        <p className="text-gray-600 text-lg">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          Contact
+        </h1>
+
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Une demande, un projet ou un événement ?
+          <br />
+          Nous vous répondrons dans les plus brefs délais.
         </p>
       </section>
 
       {/* CONTENU */}
-      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 pb-24">
+      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-14 items-start pb-24">
         {/* FORMULAIRE */}
         <div>
           {success ? (
-            <div className="bg-white p-10 rounded-3xl shadow-xl text-center">
-              <h2 className="text-3xl font-bold mb-4 text-[#6E4B3A]">
+            <div className="bg-white p-10 rounded-3xl shadow-xl text-center h-full flex flex-col justify-center">
+              <h2 className="text-3xl font-bold mb-6 text-[#6E4B3A]">
                 Merci pour votre message
               </h2>
 
@@ -111,31 +123,31 @@ export default function ContactPage() {
           ) : (
             <form
               onSubmit={handleSubmit}
-              className="bg-white p-10 rounded-3xl shadow-xl space-y-5"
+              className="bg-white p-8 md:p-10 rounded-3xl shadow-xl space-y-5"
             >
               <input
                 name="nom"
                 placeholder="Nom"
-                className="w-full border p-4 rounded-xl"
+                className="w-full border border-gray-200 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-700"
               />
 
               <input
                 name="email"
                 placeholder="Email"
-                className="w-full border p-4 rounded-xl"
+                className="w-full border border-gray-200 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-700"
               />
 
               <input
                 name="telephone"
                 placeholder="Téléphone"
-                className="w-full border p-4 rounded-xl"
+                className="w-full border border-gray-200 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-700"
               />
 
               <textarea
                 name="message"
-                rows={5}
+                rows={6}
                 placeholder="Message"
-                className="w-full border p-4 rounded-xl"
+                className="w-full border border-gray-200 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-700"
               />
 
               {error && (
@@ -155,25 +167,54 @@ export default function ContactPage() {
           )}
         </div>
 
-        {/* CARTE */}
-        <div className="bg-white p-10 rounded-3xl shadow-xl">
-          <h2 className="text-2xl font-semibold mb-6 text-[#6E4B3A]">
-            Notre localisation
-          </h2>
-
-          <p className="mb-6 text-gray-600">
-            Domaine Quitano
-            <br />
-            81440 Saint julien du Puy
-            <br />
-            Tarn, France
+        {/* INFOS */}
+        <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl">
+          <p className="uppercase tracking-[0.3em] text-yellow-700 text-sm mb-4">
+            Localisation
           </p>
 
-          <div className="h-[450px] rounded-2xl overflow-hidden">
+          <h2 className="text-3xl font-bold mb-8 text-[#6E4B3A]">
+            Les Calèches du Temps
+          </h2>
+
+          <div className="space-y-6 text-gray-700 text-lg">
+            <div>
+              <p className="font-semibold mb-1">
+                Région
+              </p>
+
+              <p>
+                Tarn • Occitanie
+              </p>
+            </div>
+
+            <div>
+              <p className="font-semibold mb-1">
+                Secteur
+              </p>
+
+              <p>
+                Albi • Toulouse • Occitanie
+              </p>
+            </div>
+
+            <div>
+              <p className="font-semibold mb-1">
+                Prestations
+              </p>
+
+              <p>
+                Mariages • Cinéma • Événementiel
+              </p>
+            </div>
+          </div>
+
+          {/* CARTE */}
+          <div className="h-[350px] md:h-[420px] rounded-3xl overflow-hidden mt-10">
             <iframe
               className="w-full h-full"
               loading="lazy"
-              src="https://maps.google.com/maps?q=Domaine%20Quitano&z=7&output=embed"
+              src="https://maps.google.com/maps?q=Tarn%20France&z=8&output=embed"
             />
           </div>
         </div>
