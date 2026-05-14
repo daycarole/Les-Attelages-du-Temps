@@ -42,74 +42,166 @@ export default function Prestations() {
         </p>
       </section>
 
+
+
+
       {/* MARIAGE */}
-      <section
-        id="mariage"
-        className="scroll-mt-28 md:scroll-mt-32 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-24 md:mb-32"
+<section
+  id="mariage"
+  className="scroll-mt-28 md:scroll-mt-32 max-w-6xl mx-auto mb-24 md:mb-32"
+>
+  {/* TITRE */}
+  <div className="mb-4">
+    <h2 className="text-3xl md:text-4xl font-bold text-[#6E4B3A]">
+      Mariage
+    </h2>
+  </div>
+
+  {/* ARRIVÉE EN CALÈCHE */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-20">
+    <div className="w-full">
+      <Swiper
+        modules={[Autoplay, Navigation, EffectFade]}
+        spaceBetween={0}
+        slidesPerView={1}
+        loop={true}
+        effect="fade"
+        navigation={true}
+        autoplay={{ delay: 3500, disableOnInteraction: false }}
+        className="rounded-3xl overflow-hidden shadow-2xl"
       >
-        <div className="w-full">
-          <Swiper
-            modules={[Autoplay, Navigation, EffectFade]}
-            spaceBetween={0}
-            slidesPerView={1}
-            loop={true}
-            effect="fade"
-            navigation={true}
-            autoplay={{ delay: 3500, disableOnInteraction: false }}
-            className="rounded-3xl overflow-hidden shadow-2xl"
-          >
-            <SwiperSlide>
-              <img
-                src="/galerie-mariage/poneys-mariage.jpg"
-                alt="Poneys pour mariage"
-                className="h-[260px] md:h-[380px] w-full object-cover"
-              />
-            </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="/galerie-mariage/poneys-mariage.jpg"
+            alt="Arrivée en calèche pour mariage"
+            className="h-[260px] md:h-[380px] w-full object-cover"
+          />
+        </SwiperSlide>
 
-            <SwiperSlide>
-              <img
-                src="/galerie-mariage/chevaux-mariage.jpg"
-                alt="Chevaux pour mariage"
-                className="h-[260px] md:h-[380px] w-full object-cover"
-              />
-            </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="/galerie-mariage/chevaux-mariage.jpg"
+            alt="Chevaux attelés pour mariage"
+            className="h-[260px] md:h-[380px] w-full object-cover"
+          />
+        </SwiperSlide>
 
-            <SwiperSlide>
-              <img
-                src="/galerie-mariage/poneys-caleche.webp"
-                alt="Poneys avec calèche"
-                className="h-[260px] md:h-[380px] w-full object-cover"
-              />
-            </SwiperSlide>
-          </Swiper>
-        </div>
+        <SwiperSlide>
+          <img
+            src="/galerie-mariage/poneys-caleche.webp"
+            alt="Calèche de mariage avec poneys"
+            className="h-[260px] md:h-[380px] w-full object-cover"
+          />
+        </SwiperSlide>
+      </Swiper>
+    </div>
 
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#6E4B3A]">
-            Mariage
-          </h2>
+    <div>
+      <p className="uppercase tracking-[0.25em] text-yellow-700 text-2xl mb-4">
+        Arrivée en calèche
+      </p>
 
-          <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-            Offrez à votre mariage une entrée inoubliable avec nos calèches
-            d’exception, pensées pour sublimer chaque instant de votre journée.
-            <br />
-            <br />
-            Les Attelages du Temps vous accompagnent dans les moments les plus
-            précieux : l’arrivée des mariés, mais aussi l’arrivée des enfants
-            d’honneur, apportant douceur et poésie à la cérémonie.
-            <br />
-            <br />
-            Nos différentes calèches, soigneusement sélectionnées, s’adaptent à
-            l’ambiance de votre événement — du style romantique au plus
-            authentique — pour créer une mise en scène élégante et cohérente.
-            <br />
-            <br />
-            Chaque attelage devient également un décor idéal pour vos photos,
-            offrant un cadre naturel, vivant et intemporel pour immortaliser vos
-            souvenirs.
-          </p>
-        </div>
-      </section>
+    
+
+      <p className="text-base text-gray-700 leading-relaxed">
+        Offrez à votre mariage une arrivée inoubliable avec nos calèches
+        d’exception, pensées pour sublimer chaque instant de votre journée.
+        <br />
+        <br />
+        Les Calèches du Temps vous accompagnent dans les moments les plus
+        précieux : l’arrivée des mariés, l’arrivée des enfants d’honneur ou
+        encore les séances photo.
+        <br />
+        <br />
+        Nos différentes calèches s’adaptent à l’ambiance de votre événement,
+        du style romantique au plus authentique, pour créer une mise en scène
+        élégante et cohérente.
+      </p>
+    </div>
+  </div>
+
+  {/* ARRIVÉE À CHEVAL */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+    <div className="order-2 md:order-1">
+      <p className="uppercase tracking-[0.25em] text-yellow-700 text-2xl mb-4">
+        Arrivée à cheval
+      </p>
+
+     
+
+      <p className="text-base text-gray-700 leading-relaxed">
+        Pour les mariés souhaitant une arrivée encore plus unique, nous
+        proposons également des chevaux montés spécialement préparés pour les
+        cérémonies.
+        <br />
+        <br />
+        Chaque cheval est sélectionné pour son calme, son élégance et son
+        tempérament afin de créer un moment fort, sécurisé et parfaitement
+        adapté à l’ambiance de votre mariage.
+        <br />
+        <br />
+        Cette prestation peut accompagner une entrée de cérémonie, une séance
+        photo ou un moment privilégié lors de votre événement.
+      </p>
+
+      <a
+        href="/chevaux"
+        className="inline-block mt-8 bg-[#2B2622] text-white px-8 py-4 rounded-full hover:bg-[#463c36] transition"
+      >
+        Découvrir nos chevaux
+      </a>
+    </div>
+
+    <div className="w-full order-1 md:order-2">
+      <Swiper
+        modules={[Autoplay, Navigation, EffectFade]}
+        spaceBetween={0}
+        slidesPerView={1}
+        loop={true}
+        effect="fade"
+        navigation={true}
+        autoplay={{ delay: 3500, disableOnInteraction: false }}
+        className="rounded-3xl overflow-hidden shadow-2xl"
+      >
+        <SwiperSlide>
+          <img
+            src="/galerie-monte/princesse.webp"
+            alt="Cheval monté pour mariage"
+            className="h-[260px] md:h-[380px] w-full object-cover"
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+            src="/galerie-monte/espagnol.webp"
+            alt="Arrivée à cheval pour les mariés"
+            className="h-[260px] md:h-[380px] w-full object-cover"
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+            src="/galerie-monte/berbere.webp"
+            alt="Cheval de cérémonie pour mariage"
+            className="h-[260px] md:h-[380px] w-full object-cover"
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+            src="/galerie-monte/marie.webp"
+            alt="Cheval de cérémonie pour mariage"
+            className="h-[260px] md:h-[380px] w-full object-cover"
+          />
+        </SwiperSlide>
+
+
+      </Swiper>
+    </div>
+  </div>
+</section>
+
+
 
       {/* CINÉMA */}
       <section

@@ -213,7 +213,7 @@ export default function Home() {
               </h3>
 
               <p className="text-gray-600">
-                Une touche magique pour vos événements et marchés.
+                Une touche magique pour vos événements et marchés de Noël.
               </p>
             </div>
           </a>
