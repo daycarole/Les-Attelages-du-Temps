@@ -149,7 +149,7 @@ export default function ChevauxPage() {
               className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center"
             >
               {/* CARROUSEL */}
-              <div className={inverse ? "md:order-2" : "md:order-1"}>
+              <div className={inverse ? "order-2 md:order-2" : "order-2 md:order-1"}>
                 <Swiper
                   modules={[Autoplay, Navigation, EffectFade]}
                   spaceBetween={0}
@@ -176,7 +176,7 @@ export default function ChevauxPage() {
               </div>
 
               {/* TEXTE */}
-              <div className={inverse ? "md:order-1" : "md:order-2"}>
+              <div className={inverse ? "order-1 md:order-1" : "order-1 md:order-2"}>
                 {/* PORTRAIT */}
                 <div className="mb-8 flex justify-center md:justify-start">
                   <div className="relative w-44 h-44 md:w-60 md:h-60">
