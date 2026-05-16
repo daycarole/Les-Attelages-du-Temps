@@ -52,7 +52,7 @@ Avec ses yeux bleus et son allure majestueuse, Crème apporte une touche de magi
 
   {
     nom: "Sito",
-    portrait: "/galerie-chevaux/sito-portrait.jpg",
+    portrait: "/galerie-chevaux/Sito-portrait.jpg",
     description:
       "Élégant et plein de prestance, Sito séduit par son allure chic et sa magnifique robe noire. Grand cheval au charme raffiné, il apporte une touche d’élégance et de caractère à votre mariage pour une entrée aussi classe qu’inoubliable.",
     images: [
