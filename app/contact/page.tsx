@@ -93,7 +93,7 @@ export default function ContactPage() {
       <section className="text-center mb-20">
        
 
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#6E4B3A]">
           Contact
         </h1>
 

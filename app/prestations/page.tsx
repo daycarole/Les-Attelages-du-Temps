@@ -33,8 +33,8 @@ export default function Prestations() {
 
       {/* TITRE */}
       <section className="text-center mb-14 md:mb-20">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Prestations
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#6E4B3A]">
+          Nos Prestations
         </h1>
 
         <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
