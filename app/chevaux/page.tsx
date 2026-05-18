@@ -12,11 +12,10 @@ const chevaux = [
     nom: "Crème",
     portrait: "/galerie-chevaux/creme-portrait.png",
     description: `
-Qui n’a jamais rêvé de vivre un instant digne d’un conte de fées aux côtés d’un magnifique cheval blanc ?
+Crème attire immédiatement les regards avec sa robe blanche éclatante et ses yeux bleus uniques. Élégant et délicat, il apporte à votre mariage une atmosphère digne des plus beaux contes, pour une arrivée pleine de magie et d’émotion.`, 
 
-Avec ses yeux bleus et son allure majestueuse, Crème apporte une touche de magie et d’élégance à votre mariage pour rendre votre entrée tout simplement inoubliable.
-`,  images: [
-        "/galerie-chevaux/creme/oeil.jpg",
+images: [        
+  "/galerie-chevaux/creme/oeil.jpg",
       "/galerie-chevaux/creme/assis.jpg",
       "/galerie-chevaux/creme/roi.jpg",
       "/galerie-chevaux/creme/berbere.jpg",
@@ -28,8 +27,8 @@ Avec ses yeux bleus et son allure majestueuse, Crème apporte une touche de magi
     nom: "Camaleon",
     portrait: "/galerie-chevaux/cama-portrait.jpg",
     description:
-      "Majestueux et impressionnant par sa grande taille, Camaleon attire tous les regards avec son élégance naturelle et sa prestance unique. À ses côtés, vivez une entrée pleine de charme et d’émotion pour rendre votre mariage encore plus mémorable.",
-    images: [
+"Avec sa grande taille et son allure imposante, Camaleon dégage une présence naturelle qui marque les esprits. À la fois noble et calme, il accompagne les mariés avec élégance pour créer un moment fort et inoubliable." ,   
+images: [
       "/galerie-chevaux/Cama/piaffe.jpg",
       "/galerie-chevaux/Cama/parc.webp",
       "/galerie-chevaux/Cama/cabre.png",
@@ -41,7 +40,7 @@ Avec ses yeux bleus et son allure majestueuse, Crème apporte une touche de magi
     nom: "Smart",
     portrait: "/galerie-chevaux/smart-portrait.png",
     description:
-      "Avec sa jolie robe alezane et son charme irrésistible, Smart apporte une touche de douceur et d’authenticité à votre mariage. Petit cheval au grand cœur, il saura rendre votre entrée chaleureuse, tendre et pleine de complicité.",
+"Smart séduit par sa jolie robe alezane et son regard plein de douceur. Gentil et proche de l’humain, il apporte une ambiance chaleureuse et sincère, parfaite pour un mariage rempli d’émotion et de simplicité.",
     images: [
       "/galerie-chevaux/Smart/monte.webp",
       "/galerie-chevaux/Smart/couche.jpg",
@@ -54,7 +53,7 @@ Avec ses yeux bleus et son allure majestueuse, Crème apporte une touche de magi
     nom: "Sito",
     portrait: "/galerie-chevaux/Sito-portrait.jpg",
     description:
-      "Élégant et plein de prestance, Sito séduit par son allure chic et sa magnifique robe noire. Grand cheval au charme raffiné, il apporte une touche d’élégance et de caractère à votre mariage pour une entrée aussi classe qu’inoubliable.",
+"Sito impressionne par son élégance naturelle et sa superbe robe noire. Chic et raffiné, il accompagne les mariés avec calme et prestance pour une entrée pleine de charme et de caractère.",
     images: [
       "/galerie-chevaux/Sito/monte.webp",
       "/galerie-chevaux/Sito/assis.webp",
@@ -67,7 +66,7 @@ Avec ses yeux bleus et son allure majestueuse, Crème apporte une touche de magi
     nom: "Quimero",
     portrait: "/galerie-chevaux/Quimero/portrait.webp",
     description:
-      "Quimero, magnifique cheval bai au regard doux et à l’allure élégante, accompagne également les mariés en attelage aux côtés de son frère Banderin. Calme et majestueux, il apporte une touche d’authenticité et de raffinement à votre mariage pour un moment rempli de charme et d’émotion.",
+"Quimero est un magnifique cheval bai au regard doux et à l’allure harmonieuse. Attelé aux côtés de son frère Banderin, il apporte beaucoup d’élégance et d’authenticité aux mariages, dans une ambiance à la fois raffinée et naturelle.",
     images: [
       "/galerie-chevaux/Quimero/bride.webp",
       "/galerie-chevaux/Quimero/monte.webp",
@@ -80,7 +79,7 @@ Avec ses yeux bleus et son allure majestueuse, Crème apporte une touche de magi
     nom: "Banderin",
     portrait: "/galerie-chevaux/Banderin/portrait.jpg",
     description:
-      "Banderin, magnifique cheval bai plein d’énergie et de prestance, attire les regards par son élégance naturelle et son tempérament dynamique. Frère de Quimero, il apporte caractère, charme et intensité à votre mariage pour une arrivée pleine de vie et d’émotion.",
+"Plein d’énergie et de présence, Banderin attire immédiatement l’attention par son élégance et son tempérament expressif. Aux côtés de Quimero, il apporte rythme, caractère et intensité pour une arrivée qui ne laisse personne indifférent.",
     images: [
       "/galerie-chevaux/Banderin/monte.webp",
       "/galerie-chevaux/Banderin/trot.webp",
@@ -93,12 +92,50 @@ Avec ses yeux bleus et son allure majestueuse, Crème apporte une touche de magi
     nom: "Flash",
     portrait: "/galerie-chevaux/Flash/portrait.jpg",
     description:
-      "Flash, magnifique cheval crème aux doux yeux bleus, séduit par sa gentillesse et son regard apaisant. Avec son allure lumineuse et son tempérament doux, il apporte une touche de tendresse et de magie à votre mariage pour un moment rempli d’émotion.",
+"Avec sa robe claire et ses yeux bleus apaisants, Flash dégage beaucoup de douceur. Gentil et lumineux, il accompagne les mariés avec calme et délicatesse pour créer un moment tendre et rempli d’émotion.",
     images: [
       "/galerie-chevaux/Flash/balade.jpg",
       "/galerie-chevaux/Flash/profil.jpg",
       "/galerie-chevaux/Flash/monte.jpg",
       
+    ],
+  },
+
+  {
+    nom: "Marcel",
+    portrait: "/galerie-chevaux/Marcel/portrait.jpg",
+    description:
+"Grand cheval noir au tempérament paisible, Marcel séduit par sa présence rassurante et son élégance naturelle. Calme et attentif, il apporte beaucoup de sérénité et de prestance lors des cérémonies et des séances photo.",
+    images: [  
+      "/galerie-chevaux/Marcel/liberte.jpg",
+      "/galerie-chevaux/Marcel/chevalier.jpg",
+      "/galerie-chevaux/Marcel/voltige.jpg",
+     
+    ],
+  },
+
+  {
+    nom: "Guizmo",
+    portrait: "/galerie-chevaux/Guizmo/portrait.jpg",
+    description:
+"Guizmo est un adorable poney palomino au tempérament joueur et malicieux. Attelé avec Mogwaï, il accompagne les enfants d’honneur dans une ambiance joyeuse et pleine de tendresse, pour des souvenirs aussi drôles qu’inoubliables.",
+    images: [
+      "/galerie-chevaux/Guizmo/attelage.png",
+      "/galerie-chevaux/Guizmo/liberte.jpg",
+      
+    ],
+  },
+
+  {
+    nom: "Mogwaï",
+    portrait: "/galerie-chevaux/Mogwai/portrait.jpg",
+    description:
+"Mogwaï est un poney palomino doux et patient, particulièrement apprécié des enfants. Aux côtés de Guizmo, il participe avec calme et gentillesse aux mariages en apportant une touche chaleureuse et pleine de poésie.",
+    images: [  
+      "/galerie-chevaux/Mogwai/attelage.jpg",
+      "/galerie-chevaux/Mogwai/liberte.jpg",
+      "/galerie-chevaux/Mogwai/dos.jpg",
+     
     ],
   },
 
