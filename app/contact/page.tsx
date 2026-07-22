@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Phone } from "lucide-react";
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
@@ -176,6 +177,22 @@ export default function ContactPage() {
           <h2 className="text-3xl font-bold mb-8 text-[#6E4B3A]">
             Les Calèches du Temps
           </h2>
+
+          <div>
+  <p className="font-semibold mb-1">
+    Téléphone
+  </p>
+
+  <a
+    href="tel:+33680959131"
+    className="flex items-center gap-2 text-[#6E4B3A] hover:text-yellow-700 transition font-medium"
+  >
+    <Phone size={20} />
+    06 80 95 91 31
+  </a>
+</div>
+
+<div className="h-4"></div>
 
           <div className="space-y-6 text-gray-700 text-lg">
             <div>
