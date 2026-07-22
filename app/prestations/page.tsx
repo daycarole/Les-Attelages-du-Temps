@@ -72,23 +72,33 @@ export default function Prestations() {
       >
         <SwiperSlide>
           <img
-            src="/galerie-mariage/poneys-mariage.jpg"
+            src="/galerie-mariage/chevaux-mariage.webp"
+            alt="Chevaux attelés pour mariage"
+            className="h-[260px] md:h-[380px] w-full object-cover"
+          />
+        </SwiperSlide>
+        
+        <SwiperSlide>
+          <img
+            src="/galerie-mariage/poneys-mariage.webp"
             alt="Arrivée en calèche pour mariage"
             className="h-[260px] md:h-[380px] w-full object-cover"
           />
         </SwiperSlide>
 
+        
+
         <SwiperSlide>
           <img
-            src="/galerie-mariage/chevaux-mariage.jpg"
-            alt="Chevaux attelés pour mariage"
+            src="/galerie-mariage/caleche-maries.webp"
+            alt="Calèche de mariage avec poneys"
             className="h-[260px] md:h-[380px] w-full object-cover"
           />
         </SwiperSlide>
 
         <SwiperSlide>
           <img
-            src="/galerie-mariage/poneys-caleche.webp"
+            src="/galerie-mariage/mariage-poneys.webp"
             alt="Calèche de mariage avec poneys"
             className="h-[260px] md:h-[380px] w-full object-cover"
           />
@@ -248,7 +258,7 @@ export default function Prestations() {
           >
             <SwiperSlide>
               <img
-                src="/galerie-cinema/attelage-medieval.jpg"
+                src="/galerie-cinema/attelage-paysan.webp"
                 alt="Attelage médiéval"
                 className="h-[260px] md:h-[380px] w-full object-cover"
               />
@@ -310,6 +320,14 @@ export default function Prestations() {
               />
             </SwiperSlide>
             
+              <SwiperSlide>
+              <img
+                src="/galerie-cinema/caleche-victoria.webp"
+                alt="Attelage en tmarathon"
+                className="h-[260px] md:h-[380px] w-full object-cover"
+              />
+            </SwiperSlide>
+            
           </Swiper>
         </div>
       </section>
@@ -332,7 +350,7 @@ export default function Prestations() {
           >
             <SwiperSlide>
               <img
-                src="/galerie-evenement/caleche-noel.png"
+                src="/galerie-evenement/caleche-noel.webp"
                 alt="Calèche de Noël"
                 className="h-[260px] md:h-[380px] w-full object-cover"
               />
@@ -340,7 +358,7 @@ export default function Prestations() {
 
             <SwiperSlide>
               <img
-                src="/galerie-evenement/caleche-evenement.png"
+                src="/galerie-evenement/attelage-evenement.webp"
                 alt="Calèche événementielle"
                 className="h-[260px] md:h-[380px] w-full object-cover"
               />
@@ -348,7 +366,7 @@ export default function Prestations() {
 
             <SwiperSlide>
               <img
-                src="/galerie-evenement/attelage-evenement.png"
+                src="/galerie-evenement/caleche-parc.webp"
                 alt="Attelage événementiel"
                 className="h-[260px] md:h-[380px] w-full object-cover"
               />

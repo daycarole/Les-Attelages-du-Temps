@@ -181,7 +181,7 @@ export default function Home() {
             className="block bg-white rounded-3xl overflow-hidden shadow-xl hover:scale-[1.02] transition duration-500"
           >
             <img
-              src="/galerie-cinema/caleche-cinema.png"
+              src="/galerie-cinema/caleche-cinema.webp"
               alt="Calèche pour tournage cinéma historique"
               className="w-full h-72 object-cover"
             />
@@ -202,7 +202,7 @@ export default function Home() {
             className="block bg-white rounded-3xl overflow-hidden shadow-xl hover:scale-[1.02] transition duration-500"
           >
             <img
-              src="/galerie-evenement/caleche-noel.png"
+              src="/galerie-evenement/caleche-noel.webp"
               alt="Calèche événement pour marché de Noël"
               className="w-full h-72 object-cover"
             />
@@ -224,7 +224,7 @@ export default function Home() {
       <section className="bg-[#2B2622] text-white py-24 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <img
-            src="/galerie-accueil/chevaux-attelage.jpg"
+            src="/galerie-accueil/chevaux-attelage.webp"
             alt="Chevaux attelage Occitanie sud de France"
             className="rounded-3xl"
           />
